@@ -198,7 +198,7 @@ $form-bg-color: $gray-1;
 $modal-bg-color: $gray-1;
 
 //TOP HEADER IMAGE MARGIN
-$header_image_margin: -77px;
+$header_image_margin: 0;
 
 //FOOTER MARGIN
 $footer_margin: ($baseline/4) 0;
@@ -335,6 +335,11 @@ $video-thumb-url: '../themes/suclass/images/stanford-online-video-thumb.png';
             font-weight: bold;
         }
     }
+}
+
+.course-info header.course-profile {
+    height: auto !important;
+    padding: 70px 0 !important;
 }
 
 // Previous and Next arrow styling changes
