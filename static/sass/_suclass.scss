@@ -198,7 +198,7 @@ $form-bg-color: $gray-1;
 $modal-bg-color: $gray-1;
 
 //TOP HEADER IMAGE MARGIN
-$header_image_margin: -77px;
+$header_image_margin: 0;
 
 //FOOTER MARGIN
 $footer_margin: ($baseline/4) 0;
@@ -255,19 +255,19 @@ $video-thumb-url: '../themes/suclass/images/stanford-online-video-thumb.png';
 }
 
 #global-navigation {
+    z-index: 100;
+    
     .nav-wrapper .user {
         .primary a {
             &.user-link {
-                padding: 6px 8px 9px 10px
+                background: transparent;
+                box-shadow: none;
             }
         }
         .primary button {
             &.dropdown {
-                padding: 1px 10px 6px 10px;
-                background-color: $button-bg-color;
-                border-radius: 0;
-                box-shadow: 0 1px 0 0 rgba(255,255,255, 0.6);
-                line-height: 1.6rem;
+                background: transparent;
+                padding: 5px 10px 10px 10px;
             }
         }
     }
@@ -335,6 +335,11 @@ $video-thumb-url: '../themes/suclass/images/stanford-online-video-thumb.png';
             font-weight: bold;
         }
     }
+}
+
+.course-info header.course-profile {
+    height: auto !important;
+    padding: 70px 0 !important;
 }
 
 // Previous and Next arrow styling changes
